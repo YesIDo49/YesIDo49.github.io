@@ -1,0 +1,91 @@
+footer{
+  max-height: 200px;
+  grid-column: 1/3;
+  grid-row: 5/5;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: $pinkShade;
+  border-top: 2px solid $whiteShade;
+  color: $whiteShade;
+  padding: 10px;
+  > .name{
+    grid-column: 1/2;
+    margin-top: 10px;
+    padding-right: 40px;
+    border-right: 2px solid $whiteShade;
+  }
+
+  > .contact{
+    grid-column: 2/2;
+    margin-top: 10px;
+    padding-right: 80px;
+    border-right: 2px solid $whiteShade;
+
+    > a{
+      color: $whiteShade;
+      text-decoration:none;
+
+    }
+    > a:hover{
+      color:rgba(255,255,255,0.5);
+      text-decoration:none;
+      transition: 0.2s;
+    }
+
+    >a:after {
+      display:block;
+      content: '';
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    > a:hover:after {
+      transform: scaleX(1);
+
+    }
+
+  }
+
+  > .socials{
+    grid-column: 3/3;
+    margin: 10px;
+    padding-right: 50px;
+
+  }
+
+  .icons {
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+
+  .facebook:hover
+  {
+    color:#fff;
+    background-color:#29aafe;
+  }
+
+  .linkedin:hover
+  {
+    color:#fff;
+    background-color:#007bb6;
+  }
+  .github:hover
+  {
+    color:#fff;
+    background-color: $blackShade;
+  }
+
+}
