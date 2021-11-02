@@ -265,10 +265,11 @@ footer .github:hover {
 .language > .lang-title {
   text-align: center;
   color: #d2379b;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #2e3033;
   margin: auto;
   width: 25%;
   padding: 15px;
+  box-shadow: 0 8px 16px rgba(82, 82, 82, 0.3);
 }
 
 .container {
@@ -285,7 +286,7 @@ footer .github:hover {
   display: flex;
   height: 300px;
   width: 200px;
-  background-color: #ebf6ff;
+  background-color: #191E23;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   transition: 0.4s ease-out;
